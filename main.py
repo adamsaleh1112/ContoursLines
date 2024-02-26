@@ -30,9 +30,9 @@ while (True): # indefinite loop
         cv2.polylines(img, [np.array(contour2)], False, (0, 0, 255), 3) # collects all the points stored in the contour2 array and connects lines in between them
 
         for i in range(min(len(contour1), len(contour2))): # finding which contour has less points, then iterating through the loop for however many points the smallest contour has
-            xavg = (contour1[i][0][0] + contour2[i][0][0]) / 2 # calculates x average by adding an x (depending on iteration or variale i) from both contours and dividing by 2
+            xavg = (contour1[i][0][0] + contour2[i][0][0]) / 2 # calculates x average by adding an x (depending on iteration or variable i) from both contours and dividing by 2
             xavg = int(xavg) # turns it into a whole number interger
-            yavg = (contour1[i][0][1] + contour2[i][0][1]) / 2 # calculates y average by adding an y (depending on iteration or variale i) from both contours and dividing by 2
+            yavg = (contour1[i][0][1] + contour2[i][0][1]) / 2 # calculates y average by adding an y (depending on iteration or variable i) from both contours and dividing by 2
             yavg = int(yavg) # turns it into a whole number interger
 
             midline.append((xavg, yavg)) # appends average x and y as ordered pair to midline array
