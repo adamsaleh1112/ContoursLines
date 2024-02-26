@@ -11,10 +11,10 @@ while (True): # indefinite loop
 
     # IMAGE PROCESSING
     ret, img = vid.read() # img or (frame) is equal to the frame being read
-    maskx = 150 # mask variables
-    masky = 100
-    maskw = 350
-    maskh = 250
+    maskx = 500 # mask variables
+    masky = 180
+    maskw = 920
+    maskh = 720
     maskimg = processed(img=img, maskx=maskx, masky=masky, maskw=maskw, maskh=maskh) # image processing function
 
     contours, hierarchy = cv2.findContours(maskimg, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE) # detecting contour lines
