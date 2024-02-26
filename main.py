@@ -1,4 +1,4 @@
-# IMPORT NUMPY AND CV2
+# IMPORT NUMPY AND OPENCV
 import numpy as np # importing numpy, a library that allows for complex data structures
 import cv2 # importing opencv, a image processing library for python
 from imgprocessing import processed # importing processing function
